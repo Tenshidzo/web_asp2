@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Online Store</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Products" asp-action="Index">Products</a></li>
+                <li><a asp-controller="Cart" asp-action="Index">Cart</a></li>
+                <li><a asp-controller="Account" asp-action="Login">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Online Store</p>
+    </footer>
+</body>
+</html>
